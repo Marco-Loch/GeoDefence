@@ -1,13 +1,12 @@
 # GeoDefence
 
 ## Overview
-GeoDefence is a cutting-edge solution designed for geographic defense strategies, supporting users with advanced tools and features.
+GeoDefence is a "cutting-edge" solution designed for geometric defense, supporting users with advanced tools and features. In fact thoose tools are wildly more damage and features to even do more damage to those pesky triangles and his friends!
 
 ## Features
-- Real-time monitoring of geographical data
-- Interactive mapping tools
+- Mousefocused gameplay
+- Meta upgrades
 - User-friendly interfaces
-- Customizable alerts and notifications
 
 ## Installation
 To install GeoDefence, follow these steps:
