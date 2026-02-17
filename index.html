@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometric Defense</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="ui-layer" class="hidden">
+      <div class="top-bar">
+        <div class="stat-box">
+          <span class="label">CORE HP</span>
+          <span id="ui-core-hp" class="value">100%</span>
+        </div>
+        <div class="stat-box">
+          <span class="label">WAVE TIME</span>
+          <span id="ui-timer" class="value">05:00</span>
+        </div>
+        <div class="stat-box">
+          <span class="label">CURRENCY</span>
+          <span id="ui-currency" class="value">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="start-screen" class="screen">
+      <h1 class="title">GEOMETRIC DEFENSE</h1>
+      <div class="info-panel">
+        <p>CURRENT WAVE: <span id="start-wave-num">1</span></p>
+        <p>BANK: <span id="start-currency">0</span></p>
+      </div>
+      <div class="menu-buttons">
+        <button id="btn-start" class="btn-primary">INITIATE WAVE</button>
+        <button id="btn-shop" class="btn-secondary">UPGRADE PROTOCOLS</button>
+        <button id="btn-reset" class="btn-danger" style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7">RESET SYSTEM DATA</button>
+      </div>
+    </div>
+
+    <div id="shop-screen" class="screen hidden">
+      <div class="shop-header">
+        <h1 class="title" style="margin-bottom: 5px">UPGRADE PROTOCOLS</h1>
+        <p class="shop-balance">BANK: <span id="shop-currency" style="color: var(--accent-core)">0</span></p>
+      </div>
+
+      <div id="shop-scroll-area">
+        <div id="shop-container"></div>
+      </div>
+
+      <div class="shop-footer">
+        <button id="btn-shop-back" class="btn-secondary" style="width: 100%; max-width: 300px">RESUME SIMULATION</button>
+      </div>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+      <h1>SYSTEM FAILURE</h1>
+      <p>Core Destroyed</p>
+      <button onclick="location.reload()">REBOOT SYSTEM</button>
+    </div>
+
+    <div id="game-wrapper">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <script type="module" src="script.js" defer></script>
+  </body>
+</html>
